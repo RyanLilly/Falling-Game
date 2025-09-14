@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="falling game"
-run/main_scene="res://FUZ/FuzMinigame3/game.tscn"
+config/version="1.0.0"
+run/main_scene="uid://dyphfecqm32vr"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://bb246sstfjaut"
 
 [display]
 

@@ -17,7 +17,7 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	position.y+=SPEED*delta
 
-func _on_area_2d_area_entered(area: Area2D) -> void:
+func _on_area_2d_area_entered(_area: Area2D) -> void:
 	if get_child(0).animation=="default":
 		get_parent().coin_collect.emit(1)
 	elif get_child(0).animation=="coinbag":
@@ -26,6 +26,5 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		get_parent().health_change.emit(1)
 	queue_free()
 
-
-func _on_area_2d_2_area_entered(area: Area2D) -> void:
+func _on_area_2d_2_area_entered(_area: Area2D) -> void:
 	queue_free()

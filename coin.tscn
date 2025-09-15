@@ -1,9 +1,9 @@
 [gd_scene load_steps=24 format=3 uid="uid://dbb72108171o3"]
 
 [ext_resource type="Script" uid="uid://4da2qekehlr1" path="res://coin.gd" id="1_f5rnc"]
-[ext_resource type="Texture2D" uid="uid://e1pxtl8y4l6v" path="res://coinRework.png" id="2_4rdac"]
-[ext_resource type="Texture2D" uid="uid://cflhwjnqglrvd" path="res://CoinBagRework.png" id="2_eds4y"]
-[ext_resource type="Texture2D" uid="uid://ck8lxye5js33" path="res://heartPickup.png" id="4_4gb40"]
+[ext_resource type="Texture2D" uid="uid://dffi4q1rfvpcb" path="res://coinRework.png" id="2_4rdac"]
+[ext_resource type="Texture2D" uid="uid://dwa4ox2idswc7" path="res://CoinBagRework.png" id="2_eds4y"]
+[ext_resource type="Texture2D" uid="uid://82334gvx0rr8" path="res://heartPickup.png" id="4_4gb40"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nsgmb"]
 atlas = ExtResource("2_eds4y")

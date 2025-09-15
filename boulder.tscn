@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://8b0n4t5uvgrd"]
 
 [ext_resource type="Script" uid="uid://bt3popjac5t8l" path="res://boulder.gd" id="1_semin"]
-[ext_resource type="Texture2D" uid="uid://dw7mskgj82kjs" path="res://Boulder.png" id="2_w0k47"]
+[ext_resource type="Texture2D" uid="uid://cqeqsy7k6a0ge" path="res://Boulder.png" id="2_w0k47"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_tspnd"]
 bounce = 0.6

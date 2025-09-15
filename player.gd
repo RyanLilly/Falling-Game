@@ -29,7 +29,7 @@ func _physics_process(delta: float) -> void:
 	#cha cha slide
 	move_and_slide()
 
-func _on_boulder_sensor_area_entered(area: Area2D) -> void:
+func _on_boulder_sensor_area_entered(_area: Area2D) -> void:
 	get_parent().health_change.emit(-1)
 
 func _on_bat_sensor_area_entered(area: Area2D) -> void:

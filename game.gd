@@ -3,7 +3,7 @@ extends Node2D
 #TO ADD:
 #I'm done here.
 
-@onready var boulder = preload("res://boulder.tscn")
+@onready var boulder_pre = preload("res://boulder.tscn")
 @onready var coin = preload("res://coin.tscn")
 @onready var left_boulder_boundary: Marker2D = $Background/LeftBoulderBoundary
 @onready var right_boulder_boundary: Marker2D = $Background/RightBoulderBoundary
@@ -66,7 +66,7 @@ func _ready() -> void:
 	#_on_coin_collect(500) for playtesting
 
 func _on_boulder_timer_timeout() -> void:
-	var scene = boulder.instantiate()
+	var scene = boulder_pre.instantiate()
 	var leftBoundary:int = left_boulder_boundary.global_position.x
 	var rightBoundary:int = right_boulder_boundary.global_position.x
 	scene.global_position=Vector2(randi_range(leftBoundary,rightBoundary),left_boulder_boundary.global_position.y)
@@ -169,7 +169,7 @@ func spawn_bat() -> void:
 	scene.type="bat"
 	self.add_child(scene)
 
-func _on_upgrade(type:String, amount:int):
+func _on_upgrade(type:String, amount:int) -> void:
 	match type:
 		"Coins":
 			if pitchscale>2: _on_coin_collect(amount/2)

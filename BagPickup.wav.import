@@ -2,7 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://b2tiwkilbtwmg"
+uid="uid://cqciehofdbaxy"
 path="res://.godot/imported/BagPickup.wav-2fc571b67f3e1f1f7dff63d6f2d6dc60.sample"
 
 [deps]
@@ -21,4 +21,4 @@ edit/normalize=false
 edit/loop_mode=0
 edit/loop_begin=0
 edit/loop_end=-1
-compress/mode=0
+compress/mode=2

@@ -2,19 +2,19 @@
 
 [ext_resource type="Script" uid="uid://bvuufp1xfqor7" path="res://game.gd" id="1_8pthr"]
 [ext_resource type="Script" uid="uid://6c7q21rjbver" path="res://player.gd" id="1_we1d6"]
-[ext_resource type="Texture2D" uid="uid://bb246sstfjaut" path="res://pl1-right.png" id="3_elkpi"]
+[ext_resource type="Texture2D" uid="uid://x3kl2l4q355c" path="res://pl1-right.png" id="3_elkpi"]
 [ext_resource type="PackedScene" uid="uid://bvmensby7kho7" path="res://wind.tscn" id="4_7w6j3"]
 [ext_resource type="Shader" uid="uid://2hbayp38df6n" path="res://ParallaxShader.gdshader" id="6_dkkrx"]
-[ext_resource type="Texture2D" uid="uid://bepvi2owxbn7" path="res://CliffSide1.png" id="7_5sscb"]
-[ext_resource type="Texture2D" uid="uid://bxf7dsp47m0dl" path="res://CliffSide3.png" id="7_ae5ke"]
-[ext_resource type="Texture2D" uid="uid://cgi17c5gpaetm" path="res://CliffSide2.png" id="7_c7bxg"]
+[ext_resource type="Texture2D" uid="uid://dwwmb6b6k0im0" path="res://CliffSide1.png" id="7_5sscb"]
+[ext_resource type="Texture2D" uid="uid://ceavj1jmlyo5a" path="res://CliffSide3.png" id="7_ae5ke"]
+[ext_resource type="Texture2D" uid="uid://3pcgbxht0hjf" path="res://CliffSide2.png" id="7_c7bxg"]
 [ext_resource type="PackedScene" uid="uid://drxwt7soixyjw" path="res://heartui.tscn" id="9_o22b2"]
-[ext_resource type="AudioStream" uid="uid://bqeyvqo3qbf8q" path="res://coin.wav" id="10_njx7n"]
-[ext_resource type="AudioStream" uid="uid://c8w40dukl3hmc" path="res://damage.wav" id="11_fxs2l"]
-[ext_resource type="AudioStream" uid="uid://b2tiwkilbtwmg" path="res://BagPickup.wav" id="11_tyfst"]
-[ext_resource type="AudioStream" uid="uid://c2i46la5yfmwe" path="res://healthSE.wav" id="13_iq4xr"]
-[ext_resource type="AudioStream" uid="uid://3wu1xxf1ily0" path="res://Project_20V3.mp3" id="14_1p3hf"]
-[ext_resource type="AudioStream" uid="uid://34gn5xa8lona" path="res://Project_15V2.mp3" id="15_u7mgr"]
+[ext_resource type="AudioStream" uid="uid://dqe5vsij6yyfm" path="res://coin.wav" id="10_njx7n"]
+[ext_resource type="AudioStream" uid="uid://c286oewy57yjb" path="res://damage.wav" id="11_fxs2l"]
+[ext_resource type="AudioStream" uid="uid://cqciehofdbaxy" path="res://BagPickup.wav" id="11_tyfst"]
+[ext_resource type="AudioStream" uid="uid://d1ye6s6x2ksm2" path="res://healthSE.wav" id="13_iq4xr"]
+[ext_resource type="AudioStream" uid="uid://cw2vui1c1rgas" path="res://Project_20V3.mp3" id="14_1p3hf"]
+[ext_resource type="AudioStream" uid="uid://nl450m6nirb6" path="res://Project_15V2.mp3" id="15_u7mgr"]
 [ext_resource type="PackedScene" uid="uid://dr75vj0w6fttm" path="res://upgrade_button.tscn" id="16_j2p8w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p2hbm"]
@@ -338,8 +338,6 @@ z_index = 4
 position = Vector2(928, 456)
 shape = SubResource("RectangleShape2D_0hrd8")
 
-[node name="CharacterLoader" type="Node" parent="."]
-
 [node name="CoinUI" type="RichTextLabel" parent="."]
 z_index = 10
 offset_left = 824.0
@@ -468,8 +466,6 @@ type = "Luck"
 position = Vector2(864, 512)
 scale = Vector2(5, 5)
 
-[connection signal="area_entered" from="Player/CoinSensor" to="Player" method="_on_coin_sensor_area_entered"]
-[connection signal="area_entered" from="Player/CoinSensor/CoinSensor" to="Player" method="_on_coin_sensor_area_entered"]
 [connection signal="area_entered" from="Player/BoulderSensor" to="Player" method="_on_boulder_sensor_area_entered"]
 [connection signal="area_entered" from="Player/BatSensor" to="Player" method="_on_bat_sensor_area_entered"]
 [connection signal="timeout" from="BoulderTimer" to="." method="_on_boulder_timer_timeout"]

@@ -7,7 +7,7 @@ const CAUTION = preload("res://caution.tscn")
 func _ready() -> void:
 	get_parent().wave_start.connect(_on_wave_start)
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if get_parent().waveInProgress==false:
 		canHurt=false
 		bat_move.paused=true

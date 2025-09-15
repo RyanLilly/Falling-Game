@@ -30,13 +30,10 @@ func _ready() -> void:
 	press_action.visible=false
 	get_parent().wave_buffer_signal.connect(wave_buffer_signal)
 	collision_shape_2d.set_disabled(true)
-	
 
-
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("shoot")==true&&player_in==true:
 		buy()
-
 
 func buy() -> void:
 	if self.visible==true:
@@ -75,7 +72,6 @@ func buy() -> void:
 		collision_shape_2d.set_disabled(true)
 		set_visuals()
 
-
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body is Player && self.visible==true:
 		press_action.visible=true
@@ -92,7 +88,7 @@ func wave_buffer_signal() -> void:
 	set_visuals()
 	self.visible=true
 
-func set_visuals():
+func set_visuals() -> void:
 	match type:
 		"Luck":
 			sprite_2d.texture=UPGRADE_1
